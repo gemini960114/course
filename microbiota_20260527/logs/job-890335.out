@@ -1,0 +1,118 @@
+============================================================
+QIIME2 Singularity job started
+Job ID:      890335
+Node:        icpnq113
+User:        c00cjz00
+Workdir:     /home/c00cjz00/course/microbiota
+Started at:  2026-05-27 00:12:33
+============================================================
+THREADS=8
+Container THREADS=8
+THREADS=8
+============================================================
+QIIME 2 Moving Pictures tutorial
+Workdir: /home/c00cjz00/course/microbiota/moving-pictures-run
+Started at: 2026-05-27 00:12:34
+============================================================
+
+==> Checking qiime command...
+q2cli version 2026.4.0
+Run `qiime info` for more version details.
+
+==> Step 1: Check sample metadata...
+sample-metadata.tsv already exists, continue.
+
+==> Step 2: Visualize metadata...
+Saved Visualization to: sample-metadata-viz.qzv
+
+==> Step 3: Check EMP single-end sequences directory and files...
+emp-single-end-sequences directory and required files already exist, continue.
+
+==> Step 4: Import EMP single-end sequences...
+Imported emp-single-end-sequences as EMPSingleEndDirFmt to emp-single-end-sequences.qza
+
+==> Step 5: Demultiplex sequences...
+Saved SampleData[SequencesWithQuality] to: demux.qza
+Saved ErrorCorrectionDetails to: demux-details.qza
+
+==> Step 6: Summarize demux results...
+Saved Visualization to: demux.qzv
+
+==> Step 7: DADA2 denoise single-end reads...
+Saved FeatureTable[Frequency] to: table.qza
+Saved FeatureData[Sequence] to: rep-seqs.qza
+Saved SampleData[DADA2Stats] to: denoising-stats.qza
+Saved DADA2BaseTransitionStats to: base-transition-stats.qza
+
+==> Step 8: Visualize DADA2 denoising stats...
+Saved Visualization to: denoising-stats.qzv
+
+==> Step 9: Feature table and representative sequence summaries...
+Saved ImmutableMetadata to: feature-frequencies.qza
+Saved ImmutableMetadata to: sample-frequencies.qza
+Saved Visualization to: table.qzv
+Saved Visualization to: rep-seqs.qzv
+
+==> Step 10: Generate phylogenetic tree...
+Saved FeatureData[AlignedSequence] to: aligned-rep-seqs.qza
+Saved FeatureData[AlignedSequence] to: masked-aligned-rep-seqs.qza
+Saved Phylogeny[Unrooted] to: unrooted-tree.qza
+Saved Phylogeny[Rooted] to: rooted-tree.qza
+
+==> Step 11: Core diversity metrics...
+Saved FeatureTable[Frequency] to: diversity-core-metrics-phylogenetic/rarefied_table.qza
+Saved SampleData[AlphaDiversity] to: diversity-core-metrics-phylogenetic/faith_pd_vector.qza
+Saved SampleData[AlphaDiversity] to: diversity-core-metrics-phylogenetic/observed_features_vector.qza
+Saved SampleData[AlphaDiversity] to: diversity-core-metrics-phylogenetic/shannon_vector.qza
+Saved SampleData[AlphaDiversity] to: diversity-core-metrics-phylogenetic/evenness_vector.qza
+Saved DistanceMatrix to: diversity-core-metrics-phylogenetic/unweighted_unifrac_distance_matrix.qza
+Saved DistanceMatrix to: diversity-core-metrics-phylogenetic/weighted_unifrac_distance_matrix.qza
+Saved DistanceMatrix to: diversity-core-metrics-phylogenetic/jaccard_distance_matrix.qza
+Saved DistanceMatrix to: diversity-core-metrics-phylogenetic/bray_curtis_distance_matrix.qza
+Saved PCoAResults to: diversity-core-metrics-phylogenetic/unweighted_unifrac_pcoa_results.qza
+Saved PCoAResults to: diversity-core-metrics-phylogenetic/weighted_unifrac_pcoa_results.qza
+Saved PCoAResults to: diversity-core-metrics-phylogenetic/jaccard_pcoa_results.qza
+Saved PCoAResults to: diversity-core-metrics-phylogenetic/bray_curtis_pcoa_results.qza
+Saved Visualization to: diversity-core-metrics-phylogenetic/unweighted_unifrac_emperor.qzv
+Saved Visualization to: diversity-core-metrics-phylogenetic/weighted_unifrac_emperor.qzv
+Saved Visualization to: diversity-core-metrics-phylogenetic/jaccard_emperor.qzv
+Saved Visualization to: diversity-core-metrics-phylogenetic/bray_curtis_emperor.qzv
+
+==> Step 12: Alpha diversity group significance...
+Saved Visualization to: faith-pd-group-significance.qzv
+Saved Visualization to: evenness-group-significance.qzv
+
+==> Step 13: Beta diversity group significance...
+Saved Visualization to: unweighted-unifrac-body-site-group-significance.qzv
+Saved Visualization to: unweighted-unifrac-subject-group-significance.qzv
+
+==> Step 14: Emperor plots with days-since-experiment-start...
+Saved Visualization to: unweighted-unifrac-emperor-days-since-experiment-start.qzv
+Saved Visualization to: bray-curtis-emperor-days-since-experiment-start.qzv
+
+==> Step 15: Alpha rarefaction...
+Saved Visualization to: alpha-rarefaction.qzv
+
+==> Step 16: Check reference taxonomy and sequences...
+reference-sequences.qza already exists, continue.
+reference-taxonomy.qza already exists, continue.
+
+==> Step 17: Train suboptimal 16S rRNA classifier...
+Saved TaxonomicClassifier to: suboptimal-16S-rRNA-classifier.qza
+
+==> Step 18: Classify taxonomy...
+Saved FeatureData[Taxonomy] to: taxonomy.qza
+Saved Visualization to: taxonomy.qzv
+
+==> Step 19: Taxa bar plot...
+Saved Visualization to: taxa-bar-plots.qzv
+
+==> Step 20: Filter gut samples...
+Saved FeatureTable[Frequency] to: gut-table.qza
+
+==> Step 21: ANCOM-BC on subject...
+Saved FeatureData[DifferentialAbundance] to: ancombc-subject.qza
+Saved Visualization to: da-barplot-subject.qzv
+
+==> Step 22: Collapse taxonomy at level 6 and run ANCOM-BC...
+Saved FeatureTable[Frequency] to: gut-table-l6.qza
